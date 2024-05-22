@@ -119,7 +119,7 @@ img {
    margin-top: -60px;
    /* min-width: 100vh; */
    padding: 240px 0;
-   background-image: url(/images/welcome-bg.jpg);
+   background-image: url(./images/welcome-bg.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -298,19 +298,19 @@ opacity: 0.5;
 }
 
 .card_queen {
-   background-image: url(/images/product-1.jpg);
+   background-image: url(./images/product-1.jpg);
 }
 
 .card_hut {
-   background-image: url(/images/product-2.jpg);
+   background-image: url(./images/product-2.jpg);
 }
 
 .card_burger {
-   background-image: url(/images/product-3.jpg);
+   background-image: url(./images/product-3.jpg);
 }
 
 .card_johns {
-   background-image: url(/images/product-4.jpg);
+   background-image: url(./images/product-4.jpg);
 }
 
 
@@ -394,6 +394,12 @@ footer .container {
 }
 
 .footer_contacts {
+   display: flex;
+   gap: 30px;
+   align-items: center;
+   /* flex-direction: column; */
+}
+.footer_links {
    display: flex;
    flex-direction: column;
 }
@@ -555,7 +561,7 @@ footer a:hover {
    .download_text {
       font-size: 32px;
    }
-
+/* 
    /* FOOTER */
    footer {
       padding-top: 40px;
@@ -568,79 +574,77 @@ footer a:hover {
    .footer_contacts {
       flex-direction: row;
       align-items: center;
-      gap: 10px;
+      gap: 30px;
    }
    .footer_title {
       font-size: 18px;
    }
    .footer_socials_link {
       margin-left: 12px;
-}
-
-
+   }
 
 /* BURGER MENU */
 
-.burger-menu_button {
-   position: fixed;
-   top: 24px;
-   right: 40px;
-   z-index: 30;
-   width: 50px;
-   height: 50px;
-   border-radius: 50%;
-   background-color: #f69f2c;
-   -webkit-transition: 0.5s;
-   -moz-transition: 0.5s;
-   -o-transition: 0.5s;
-   transition: 0.5s;
- }
- .burger-menu_button:hover .burger-menu_lines {
-   filter: brightness(0.7);
- }
- 
- .burger-menu_button:hover {
-   opacity: 0.7;
- }
- 
- .burger-menu_lines::before,
- .burger-menu_lines::after,
- .burger-menu_lines {
-   position: absolute;
-   width: 30px;
-   height: 3px;
-   background-color: #000;
-   -webkit-transition: 0.5s;
-   -moz-transition: 0.5s;
-   -o-transition: 0.5s;
-   transition: 0.5s;
- }
- .burger-menu_lines {
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
- }
- .burger-menu_lines::before {
-   content: '';
-   top: -12px;
-   left: 0;
- }
- .burger-menu_lines::after {
-   content: '';
-   top: 12px;
-   left: 0;
- }
- 
- 
- .burger-menu_active .burger-menu_lines {
-   background-color: transparent;
- }
- .burger-menu_active .burger-menu_lines::before {
-   top: 0;
-   transform: rotate(45deg);
- }
- .burger-menu_active .burger-menu_lines::after{
-   top: 0;
-   transform: rotate(-45deg);
- }
+   .burger-menu_button {
+      position: fixed;
+      top: 24px;
+      right: 40px;
+      z-index: 30;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #f69f2c;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+   }
+   .burger-menu_button:hover .burger-menu_lines {
+      filter: brightness(0.7);
+   }
+   
+   .burger-menu_button:hover {
+      opacity: 0.7;
+   }
+   
+   .burger-menu_lines::before,
+   .burger-menu_lines::after,
+   .burger-menu_lines {
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color: #000;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+   }
+   .burger-menu_lines {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+   .burger-menu_lines::before {
+      content: '';
+      top: -12px;
+      left: 0;
+   }
+   .burger-menu_lines::after {
+      content: '';
+      top: 12px;
+      left: 0;
+   }
+   
+   
+   .burger-menu_active .burger-menu_lines {
+      background-color: transparent;
+   }
+   .burger-menu_active .burger-menu_lines::before {
+      top: 0;
+      transform: rotate(45deg);
+   }
+   .burger-menu_active .burger-menu_lines::after{
+      top: 0;
+      transform: rotate(-45deg);
+   }
 }
